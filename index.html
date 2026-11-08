@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Relay dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="server.js"></script>
+</head>
+<body>
+    <h1>Relay dashboard</h1>
+    <form id="settings">
+        <div id="environments"></div>
+        <p>
+            <button type="submit">Start / apply settings</button>
+            <button type="button" id="refresh" disabled>Refresh now</button>
+            <button type="button" id="stop" disabled>Stop</button>
+        </p>
+    </form>
+    <p>Checks run every 7 seconds. API keys are kept in this page until you close or reload it.</p>
+    <p id="status" role="status">Enter your Junction keys, then start checking.</p>
+    <div class="table-container">
+        <table>
+            <thead><tr><th scope="col">Environment</th><th scope="col">Service</th>
+                <th scope="col">Status</th><th scope="col">HTTP</th>
+                <th scope="col">Response</th><th scope="col">Info</th></tr></thead>
+            <tbody id="results"></tbody>
+        </table>
+    </div>
+</body>
+</html>

@@ -1,0 +1,14 @@
+body { font-family: system-ui, sans-serif; margin: 24px; max-width: 1200px; }
+h1 { font-size: 1.5rem; }
+#environments { display: flex; flex-wrap: wrap; gap: 16px; }
+fieldset { flex: 1; min-width: 250px; padding: 16px; border: 1px solid #aaa; }
+label { display: block; margin: 10px 0; }
+input[type="url"], input[type="password"] { display: block; box-sizing: border-box; width: 100%; padding: 6px; margin-top: 4px; }
+button { padding: 7px 12px; margin: 4px 4px 4px 0; }
+.table-container { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; text-align: left; }
+th, td { padding: 8px; border: 1px solid #ccc; vertical-align: top; }
+th { background: #eee; }
+td[data-status="healthy"], td[data-status="reachable"] { color: #176329; }
+td[data-status="unreachable"], td[data-status="error"], td[data-status="degraded"] { color: #9b2424; }
+pre { white-space: pre-wrap; overflow-wrap: anywhere; max-width: 500px; max-height: 250px; overflow-y: auto; }
